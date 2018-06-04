@@ -1,0 +1,21 @@
+﻿@using Open.Facade.Location
+@model GeographicAddressViewModel
+
+@{
+    ViewBag.Title = "Delete";
+    ViewBag.SubTitle = $"{Model.AddressType} Address";
+    ViewBag.Button = "Delete";
+    Layout = "_DeletePartial";
+}
+
+<body>
+    @Html.Partial("_ViewAddress", Model);
+</body>
+
+@section Actions{
+    @Html.ActionLink("Back to List", "Index")
+}
+
+
+
+

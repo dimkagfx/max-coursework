@@ -1,0 +1,18 @@
+﻿@using Open.Facade.Location
+@model GeographicAddressViewModel
+
+@{
+    ViewBag.Title = "Details";
+    ViewBag.SubTitle = $"{Model.AddressType} Address";
+    Layout = "_DetailsPartial";
+}
+
+<body>
+@Html.Partial("_ViewAddress", Model);
+</body>
+
+@section Actions{
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID })
+    @Html.ActionLink("Back to List", "Index")
+}
+

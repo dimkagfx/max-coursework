@@ -1,0 +1,18 @@
+﻿@using Open.Facade.Location
+@model EMailAddressViewModel
+
+@{
+    ViewBag.Title = "Delete";
+    ViewBag.SubTitle = $"{Model.AddressType} Address";
+    ViewBag.Button = "Delete";
+    Layout = "_DeletePartial";
+}
+
+<body>
+        @Html.Partial("_ViewEmail", Model)
+</body>
+
+@section Actions{
+    @Html.ActionLink("Back to List", "Index")
+}
+

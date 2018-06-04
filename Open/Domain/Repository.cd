@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Interface Name="Open.Domain.Money.ICurrencyObjectsRepository" Collapsed="true">
+    <Position X="4" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Money\ICurrencyObjectsRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Open.Domain.Money.ICountryCurrencyObjectsRepository">
+    <Position X="6.75" Y="5.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Money\ICountryCurrencyObjectsRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Open.Domain.Location.ICountryObjectsRepository" Collapsed="true">
+    <Position X="1.5" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Location\ICountryObjectsRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Open.Core.ICrudRepository&lt;TObject&gt;">
+    <Position X="6.75" Y="3" Width="2.75" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Open.Core.IPaginatedRepository&lt;TObject, TRecord&gt;">
+    <Position X="2.25" Y="0.5" Width="3" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

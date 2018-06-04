@@ -1,0 +1,18 @@
+﻿@model Open.Facade.Location.TelecomAddressViewModel
+
+@{
+    ViewBag.Title = "Edit";
+    ViewBag.SubTitle = $"{Model.AddressType} Address";
+    ViewBag.Button = "Save";
+    Layout = "_EditPartial";
+}
+
+<body>
+@Html.Partial("_EditTelecom", Model)
+</body>
+
+@section Actions{
+    @Html.ActionLink("Back to List", "Index")
+}
+
+

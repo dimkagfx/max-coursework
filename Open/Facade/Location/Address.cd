@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Open.Facade.Location.AddressViewModel">
+    <Position X="3.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Location\AddressViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Open.Facade.Common.UniqueEntityViewModel">
+    <Position X="3.5" Y="0.75" Width="1.5" />
+    <Members>
+      <Field Name="id" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Common\UniqueEntityViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Open.Facade.Common.TemporalViewModel">
+    <Position X="6.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAACAAAAAAAAA=</HashCode>
+      <FileName>Common\TemporalViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Open.Core.RootObject">
+    <Position X="9.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Open.Facade.Location.EMailAddressViewModel">
+    <Position X="0.75" Y="4.25" Width="1.5" />
+    <Members>
+      <Field Name="emailAddress" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAEAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Location\EMailAddressViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Open.Facade.Location.GeographicAddressViewModel">
+    <Position X="3" Y="4.25" Width="1.5" />
+    <Members>
+      <Field Name="addressLine" Hidden="true" />
+      <Field Name="city" Hidden="true" />
+      <Field Name="country" Hidden="true" />
+      <Field Name="regionOrState" Hidden="true" />
+      <Field Name="zipOrPostalCode" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABwIAAAAAAAAAAAMAAAACAAAAAIAFAACAAAAAAAAEAA=</HashCode>
+      <FileName>Location\GeographicAddressViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Country" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="RegisteredTelecomAddresses" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Open.Facade.Location.TelecomAddressViewModel">
+    <Position X="5.25" Y="4.25" Width="1.5" />
+    <Members>
+      <Field Name="areaCode" Hidden="true" />
+      <Field Name="countryCode" Hidden="true" />
+      <Field Name="extension" Hidden="true" />
+      <Field Name="nationalDirectDialingPrefix" Hidden="true" />
+      <Field Name="number" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ICAAAAAhAAAAQAAEAEAAAAAEAAAABQAIAAEAAAAAAAE=</HashCode>
+      <FileName>Location\TelecomAddressViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="RegisteredInAddresses" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Open.Facade.Location.WebPageAddressViewModel">
+    <Position X="7.5" Y="4.25" Width="1.5" />
+    <Members>
+      <Field Name="url" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAIAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Location\WebPageAddressViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Open.Facade.Location.CountryViewModel" Collapsed="true">
+    <Position X="0.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAACAAAAAgAAA=</HashCode>
+      <FileName>Location\CountryViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

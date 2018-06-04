@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Open.Domain.Money.CountryCurrencyObject">
+    <Position X="3.5" Y="1.75" Width="2.5" />
+    <InheritanceLine Type="Open.Domain.Common.TemporalObject&lt;T&gt;" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="3.5" />
+        <Point X="4.5" Y="2.983" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Money\CountryCurrencyObject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Country" />
+      <Field Name="Currency" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Open.Domain.Location.CountryObject">
+    <Position X="7" Y="0.75" Width="1.75" />
+    <InheritanceLine Type="Open.Domain.Common.IdentifiedObject&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.875" Y="4.75" />
+        <Point X="7.875" Y="2.627" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="CurrenciesInUse" Type="Open.Domain.Money.CurrencyObject" FixedFromPoint="true">
+      <Path>
+        <Point X="7" Y="1.377" />
+        <Point X="2.5" Y="1.377" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Location\CountryObject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="CurrenciesInUse" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Open.Domain.Money.CurrencyObject">
+    <Position X="1" Y="0.75" Width="1.5" />
+    <AssociationLine Name="UsedInCountries" Type="Open.Domain.Location.CountryObject" FixedFromPoint="true">
+      <Path>
+        <Point X="2.5" Y="0.959" />
+        <Point X="7" Y="0.959" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAACAAAAAgAAAAAAA=</HashCode>
+      <FileName>Money\CurrencyObject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="UsedInCountries" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Open.Domain.Common.MetricObject&lt;T&gt;" Collapsed="true">
+    <Position X="1" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\MetricObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Open.Domain.Common.TemporalObject&lt;T&gt;" Collapsed="true">
+    <Position X="3.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\TemporalObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Open.Domain.Common.IdentifiedObject&lt;T&gt;" Collapsed="true">
+    <Position X="3" Y="4.75" Width="5.5" />
+    <InheritanceLine Type="Open.Domain.Common.UniqueObject&lt;T&gt;" FixedToPoint="true">
+      <Path>
+        <Point X="6.25" Y="4.191" />
+        <Point X="6.25" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\IdentifiedObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Open.Core.RootObject" Collapsed="true">
+    <Position X="2" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Open.Domain.Common.UniqueObject&lt;T&gt;" Collapsed="true">
+    <Position X="5.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\UniqueObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
